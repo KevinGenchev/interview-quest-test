@@ -1,0 +1,13 @@
+@media (max-width: 960px) {
+  .header-logo {
+    display: none;
+  }
+}
+
+.header-naviagtion .navigation-items {
+  list-style-type: none;
+}
+
+.header-naviagtion {
+  z-index: 1;
+}

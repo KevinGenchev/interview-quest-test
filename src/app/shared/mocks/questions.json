@@ -1,0 +1,480 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "Hard Skills Generic",
+      "question": "Design patterns",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 2,
+      "category": "Hard Skills Generic",
+      "question": "What is the benefit of having linters in the project?",
+      "answer": "The use of linters helps to diagnose and fix technical issues—e.g. code smells—in the code. As a result, fewer defects make their way to production. Readable, maintainable, and more consistent code. Linters can help teams achieve a more readable and consistent style, through the enforcement of its rules.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 3,
+      "category": "Hard Skills Generic",
+      "question": "If you are in a big team, how do you keep the code clean and consistent across team members?",
+      "answer": "set code standarts, guidelines, use linters",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 4,
+      "category": "Hard Skills Generic",
+      "question": "CDN?",
+      "answer": "A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 5,
+      "category": "Hard Skills Generic",
+      "question": "What are polyfills?",
+      "answer": "code that implements a feature on web browsers that do not support the feature. Most often, it refers to a JavaScript library that implements an HTML5 or CSS web standard, either an established standard on older browsers, or a proposed standard on existing browsers.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 6,
+      "category": "Hard Skills Generic",
+      "question": "What is Critical Rendering Path (CRP)?",
+      "answer": "Mock answer",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 7,
+      "category": "Hard Skills Generic",
+      "question": "What is REST?",
+      "answer": "REST is an acronym for REpresentational State Transfer and an architectural style for distributed hypermedia systems.Like other architectural styles, REST has its guiding principles and constraints. These principles must be satisfied if a service interface needs to be referred to as RESTful.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 8,
+      "category": "Hard Skills Generic",
+      "question": "SOLID, DRY, KISS, YAGNI",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 9,
+      "category": "Hard Skills Generic",
+      "question": "What is MVC?",
+      "answer": "The Model-View-Controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development framework to create scalable and extensible projects.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 10,
+      "category": "Hard Skills Generic",
+      "question": "How to ensure a certain level of quality/How to establish a quality gate?",
+      "answer": "code analysis; quality gate - set of measures to enforce quality policy and security standarts, conditions against which projects are measured, most often created by DevOps teams to halt or fail a build if a certain threshold of issues is detected, provide an efficient feedback loop by automating critical checks that would have to otherwise be done manually; a combination of a measure, a comparison operator, an error value",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 11,
+      "category": "JS and ES6+",
+      "question": "Event loop in JavaScript",
+      "answer": "https://www.youtube.com/watch?v=8aGhZQkoFbQ",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 12,
+      "category": "JS and ES6+",
+      "question": "What are the primitive and non-primitive types in JavaScript? /// What data types are there in JS ?",
+      "answer": "Primitive - string, number, bigint, boolean, undefined, symbol, and null.   Non-primitive: object",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 13,
+      "category": "JS and ES6+",
+      "question": "What is hoisting?",
+      "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top. In JavaScript, a variable can be declared after it has been used.In other words, a variable can be used before it has been declared.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 14,
+      "category": "JS and ES6+",
+      "question": "What types of programming paradigms are possible with JS? OOP vs. FP? Which do you prefer?",
+      "answer": "Mock answer",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 15,
+      "category": "JS and ES6+",
+      "question": "Different ways to create an object in JavaScript?",
+      "answer": "There are four ways to create an object in JavaScript - using object literals, using the function constructor, using the Object.create method, and using the class keyword (which is almost the same as using a function constructor).",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 16,
+      "category": "JS and ES6+",
+      "question": "What are defer and async attributes in the script tag? // Can you make a script non-blocking?",
+      "answer": "With HTML5, we get two new boolean attributes for the <script> tag: async and defer. Async allows execution of scripts asynchronously and defer allows execution only after the whole document has been parsed. Yes, by using defer. The browser will begin to download file.js and other deferred scripts in parallel without stopping page processing.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 17,
+      "category": "JS and ES6+",
+      "question": "Angular vs React, basic key points, architecture constraints.",
+      "answer": "Angular - strict, all-in-one solution. React - smaller size, multiple options for libraries",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 18,
+      "category": "JS and ES6+",
+      "question": "Can you change a value of a variable declared with const? Can you change a property of an object declared with const?",
+      "answer": "no and yes",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 19,
+      "category": "JS and ES6+",
+      "question": "Memory management in JS",
+      "answer": "Garbage collection",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 20,
+      "category": "JS and ES6+",
+      "question": "What are promises?",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 21,
+      "category": "HTML and CSS",
+      "question": "What is the difference between span and div?",
+      "answer": "Block and inline elements",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 22,
+      "category": "HTML and CSS",
+      "question": "Do you know any CSS frameworks? Have you worked with any?",
+      "answer": "CSS frameworks are the preplanned libraries which make easy and more standard compliant web page styling. The frequently used CSS frameworks are: - Bootstrap, Material UI,  Foundation, Semantic UI, Gumby, Ulkit",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 23,
+      "category": "HTML and CSS",
+      "question": "What is flexbox?",
+      "answer": "It allows you to design a flexible responsive layout structure without using any float or positioning property of CSS. To use CSS flexbox you need to define a flex container initially.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 24,
+      "category": "HTML and CSS",
+      "question": "What are the benefits of CSS sprites?",
+      "answer": "If a web page has a large number of images that take a longer time to load because each image separately sends out an HTTP request. The concept of CSS sprites is used to reduce the loading time for a web page because it combines the various small images into one image. It reduces the number of HTTP requests and hence the loading time.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 25,
+      "category": "HTML and CSS",
+      "question": "What are CSS modules?",
+      "answer": "CSS files in which all class names and animation names are scoped locally by default. It happens during the build by Webpack for example, the class names and selectors are changed. Classes are dynamically generated, unique, and mapped to the correct styles. Fix problems with global scope.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 26,
+      "category": "HTML and CSS",
+      "question": "box model <-> content box",
+      "answer": "The box-sizing CSS property sets how the total width and height of an element is calculated.- content-box - the initial and default value as specified by the CSS standard, the width and height properties include the content, but do not include the padding, border, or margin- border-box - the width and height properties include the content, padding, and border, but do not include the margin (padding and border will be inside of the box)",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 27,
+      "category": "HTML and CSS",
+      "question": "PRO: What data types are there in SASS?",
+      "answer": "Number, Color, String, Boolean, List/Array",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 28,
+      "category": "HTML and CSS",
+      "question": "absolute vs fixed",
+      "answer": "Whereas the position and dimensions of an element with position: absolute are relative to its containing block, the position and dimensions of an element with position: fixed are always relative to the initial containing block. This is normally the viewport: the browser window or the papers page box.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 29,
+      "category": "HTML and CSS",
+      "question": "relative absolute fixed static positions",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 30,
+      "category": "HTML and CSS",
+      "question": "PRO: How can we calculate specificity?",
+      "answer": "Start at 0, add 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, add 1 for each element name or pseudo-element.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 31,
+      "category": "Testing",
+      "question": "When you write a new feature or a component, how do you test it?",
+      "answer": "Manual testing, unit testing",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 32,
+      "category": "Testing",
+      "question": "What is unit testing?",
+      "answer": "This is a piece of code that tests another piece of code",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 33,
+      "category": "Testing",
+      "question": "What makes a unit test good?",
+      "answer": "They are readable (naming, asserts, variables, length, complexity..) They are Maintainable (no logic, not over specified, state-based, refactored) They are trust-worthy (test the right thing, isolated, not integration tests)",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 34,
+      "category": "Testing",
+      "question": "What is test pyramid",
+      "answer": "From top to bottom: E2E/UI tests -> Integration/API tests -> Unit tests",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 35,
+      "category": "Testing",
+      "question": "What is the difference between unit, integration and e2e test?",
+      "answer": "Unit - when you test only a certain isolated unit of code Integration - when you test an integration, some code you usually interact with but don't have control over (example: API)E2E - When you test the entire application. Also called UI testing",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 36,
+      "category": "Testing",
+      "question": "What is test driven development",
+      "answer": "Writing tests before writing the actual code. First you write failing test, then you write simple code that passes the test and finally you refactor that code",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 37,
+      "category": "Testing",
+      "question": "PRO: What is AAA in testing?",
+      "answer": "Arrange/Act/Assert (AAA) is a pattern for arranging and formatting code in Unit Test methods. It is a best practice to author your tests in more natural and convenient way.",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 38,
+      "category": "Testing",
+      "question": "testing coverage",
+      "answer": "80%+",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 39,
+      "category": "React",
+      "question": "Class vs function components in React? //// What types of components do you know in React?",
+      "answer": "Class - simple classes (made up of multiple functions that add functionality to the application), all class based components are child classes of the Component class of ReactJS, can work with each other, we can pass data from one class component to another;Functional - functions that takes in props and return JSX, do not natively have state or lifecycle methods, but this functionality can be added by implementing React Hooks, usually used to display information.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 40,
+      "category": "React",
+      "question": "What is a Virtual DOM in React?",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 41,
+      "category": "React",
+      "question": "How many ways for updating component you know?",
+      "answer": "props, state",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 42,
+      "category": "React",
+      "question": "What types of components do you know in React?",
+      "answer": "Mock answer",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 43,
+      "category": "React",
+      "question": "synthetic events react (rarely askd)",
+      "answer": "a cross-browser wrapper around the browser’s native event; it has the same interface as the browser’s native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 44,
+      "category": "React",
+      "question": "React lazy?",
+      "answer": "function in React that lets you load components lazily through code splitting without help from any additional libraries",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 45,
+      "category": "React",
+      "question": "How do you handle side effects in React application?",
+      "answer": "hooks",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 46,
+      "category": "React",
+      "question": "What is the purpose of Web Components? How does the Shadow DOM work? Can you access the Shadow DOM with JS from outside?",
+      "answer": "Mock answer",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 47,
+      "category": "React",
+      "question": "What is the Subject in Reactive Programming? Types? (BehaviorSubject vs ReplaySubject)",
+      "answer": "Mock answer",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 47,
+      "category": "React",
+      "question": "React patterns / How do higher level patterns MVC, MVVM…) fit in React?",
+      "answer": "React patterns: - Stateless components;- Conditional rendering;- Render props - a component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic;- Controlled components;- React hooks.MVC -> Store - View - Reducer in React; no state and side effects in the component (View) - get data from prop or from Store (Model), all changes are handled in the Reducer (Controller) - single point of failure; Redux adds immutability to MVC + history of changes",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 48,
+      "category": "Angular",
+      "question": "What are components?",
+      "answer": "Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components. Angular components are a subset of directives, always associated with a template. ... A component must belong to an NgModule in order for it to be available to another component or application.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 49,
+      "category": "Angular",
+      "question": "What are lifecycle hooks available?",
+      "answer": "Mock answer",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 50,
+      "category": "Angular",
+      "question": "What are the differences between Component and Directive?",
+      "answer": "Component is used to break up the application into smaller components. But Directive is used to design re-usable components, which is more behavior-oriented. That is why components are widely used in later versions of Angular to make things easy and build a total component-based model.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 51,
+      "category": "Angular",
+      "question": "What is the difference between constructor and ngOnInit?",
+      "answer": "The main difference between constructor and ngOnInit is that ngOnInit is lifecycle hook and runs after constructor. Component interpolated template and input initial values aren't available in constructor, but they are available in ngOnInit . The practical difference is how ngOnInit affects how the code is structured.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 52,
+      "category": "Angular",
+      "question": "How to unsubscribe and best practices",
+      "answer": ".takeUntil(this.destroy$)",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 53,
+      "category": "Angular",
+      "question": "What is the purpose of async pipe?",
+      "answer": "Async Pipe is an impure pipe that automatically subscribes to an observable to emit the latest values. It not only subscribes to an observable, but it also subscribes to a promise and calls the then method. When the components get destroyed, it automatically unsubscribes them to reduce memory leaks.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 54,
+      "category": "Angular",
+      "question": "What is Angular Universal?",
+      "answer": "Angular applications are Single-Page Applications (aka SPA's) where the rendering occurs on the Browser. This process can also be referred to as client-side rendering (CSR). Angular Universal is the process of server-side rendering (SSR) your application to HTML on the server (ie: Node. js)",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 55,
+      "category": "Angular",
+      "question": "What is Angular Ivy?",
+      "answer": "Ivy is the code name for Angular's next-generation compilation and rendering pipeline. With the version 9 release of Angular, the new compiler and runtime instructions are used by default instead of the older compiler and runtime, known as View Engine.",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 56,
+      "category": "Angular",
+      "question": "Describe the Angular Change Detection process in detail. What is the Angular Zone?",
+      "answer": "Zone.js is the key to Angular's change detection.Zone creates a wrapper around all asynchronous operations in the browser such as user interactions, HTTP, timers and any other changes that can cause changes in state.Zone knows when any these operations completes. Angular in-turn, subscribes to notifications from Zone for whenever one of these operations completes. This lets Angular know that it can run its change detection algorithms and re-render anything that has changed.This minimizes any rendering churn and makes it efficient.",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 57,
+      "category": "Angular",
+      "question": "What is RxJS?",
+      "answer": "RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code.",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 58,
+      "category": "Soft Skills",
+      "question": "What steps are you going to take if you have a colleague who doesnt perform well?",
+      "answer": "First will talk with him/her to know what is the reason => Pair programming, code reviews; share own helpers and tactics for better performance;  refer them to another colleague - more experienced, higher level; ",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 59,
+      "category": "Soft Skills",
+      "question": "How do you make proper estimations?",
+      "answer": "gather all available information, be realistic, learn from experience, take into account other people connected to the estimation; break down the task to smaller and clearer subtasks",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 60,
+      "category": "Soft Skills",
+      "question": "What information would you need when starting on a new project?",
+      "answer": "client expectations, responsibilities, teammates, kb (confluence, ...), download repo, web page designs, who is who in the project",
+      "difficulty": "Junior"
+    },
+    {
+      "id": 61,
+      "category": "Soft Skills",
+      "question": "What do you expect to change if you become D(X) developer?",
+      "answer": "nothing much - I already take responsibilities and tasks for this level",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 62,
+      "category": "Soft Skills",
+      "question": "What should be the responsibilities of a D(X) developer?",
+      "answer": "write good quality code, test, work with client to ensure the best end result, follow security standarts, communicate and work together with team, manage time and tasks, keep up with new technologies, research good practices and implement them ",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 63,
+      "category": "Soft Skills",
+      "question": "Imagine your client or manager wants to add a task in the middle of the sprint, can it be done?",
+      "answer": "It can be added to the backlog according to priority and can be included in the next sprint. Still, if it's very important to the client and it's urgent we can make an exception, we will just need to remove another task from the current sprint to even things out.",
+      "difficulty": "Regular"
+    },
+    {
+      "id": 64,
+      "category": "Soft Skills",
+      "question": "What are the skills that the good mentor must have?",
+      "answer": "Willingness to share skills, knowledge, and expertise. Demonstrates a positive attitude and acts as a positive role model. Shows enthusiasm in the field. Provides guidance and constructive feedback. Sets and meets ongoing personal and professional goals. Values the opinions and initiatives of others. Motivates others by setting a good example.",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 65,
+      "category": "Soft Skills",
+      "question": "How do you delegate work? Delegation vs Assignation? Can you give an example for something that you cannot delegate?",
+      "answer": "Delegation moves obligation from one to another, Assignment sets obligation from the start, doesn`t affect capacities; Onboarding, crisis situations",
+      "difficulty": "Senior"
+    },
+    {
+      "id": 66,
+      "category": "Soft Skills",
+      "question": "How to build a team? What stages do you know? How to move from one stage to another?",
+      "answer": "Forming, Storming, Norming, and Performing Tuckman's Model, GRIP Model, Lencioni Model, DISC Model",
+      "difficulty": "Lead"
+    },
+    {
+      "id": 67,
+      "category": "Soft Skills",
+      "question": "How to manage large teams? How to scale teams? Functional/non-functional requirements.",
+      "answer": "Split into smaller teams, each responsible for a module/feature. TODO: MOB Development",
+      "difficulty": "Lead"
+    }
+  ]
+}

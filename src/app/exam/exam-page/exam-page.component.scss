@@ -1,0 +1,99 @@
+$bg-dark-gray: rgba(0, 0, 16, 0.8);
+$dirty-white: rgb(242, 242, 242);
+
+.blurry-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.categories-container,
+.difficulties-container {
+  background-color: $bg-dark-gray;
+}
+
+.categories-container svg,
+.difficulties-container svg {
+  fill: $dirty-white;
+  height: 3.6rem;
+  width: 3.6rem;
+  margin: 0.2rem;
+}
+
+.categories-container input[type='radio'] + svg,
+.difficulties-container input[type='radio'] + svg,
+.difficulties-container i {
+  color: $dirty-white;
+  transition: all 0.2s;
+}
+
+input[id='showAllCategories']:checked + svg,
+input[id='showAllCategories']:hover + svg,
+input[id='showAllCategories']:focus + svg {
+  fill: rgb(147, 112, 219);
+}
+
+input[id='hardSkillsGeneric']:checked + svg,
+input[id='hardSkillsGeneric']:hover + svg,
+input[id='hardSkillsGeneric']:focus + svg {
+  fill: rgb(33, 182, 168);
+}
+
+input[id='angularCategory']:checked + svg,
+input[id='angularCategory']:hover + svg,
+input[id='angularCategory']:focus + svg {
+  fill: rgb(195, 0, 45, 1);
+}
+
+input[id='reactCategory']:checked + svg,
+input[id='reactCategory']:hover + svg,
+input[id='reactCategory']:focus + svg {
+  fill: rgb(0, 109, 217);
+}
+
+input[id='testingCategory']:checked + svg,
+input[id='testingCategory']:hover + svg,
+input[id='testingCategory']:focus + svg {
+  fill: rgb(229, 132, 0);
+}
+
+input[id='htmlAndCss']:checked + svg,
+input[id='htmlAndCss']:hover + svg,
+input[id='htmlAndCss']:focus + svg {
+  fill: rgb(239, 42, 16);
+}
+
+input[id='softSkills']:checked + svg,
+input[id='softSkills']:hover + svg,
+input[id='softSkills']:focus + svg {
+  fill: rgb(232, 214, 0);
+}
+
+input[id='showAllDifficulty']:checked + svg,
+input[id='showAllDifficulty']:hover + svg,
+input[id='showAllDifficulty']:focus + svg {
+  fill: rgb(0, 109, 218);
+}
+
+input[id='juniorDifficulty']:checked + svg,
+input[id='juniorDifficulty']:hover + svg,
+input[id='juniorDifficulty']:focus + svg {
+  fill: rgb(218, 165, 32);
+}
+
+input[id='regularDifficulty']:checked + svg,
+input[id='regularDifficulty']:hover + svg,
+input[id='regularDifficulty']:focus + svg {
+  fill: rgb(60, 179, 113);
+}
+
+input[id='seniorDifficulty']:checked + svg,
+input[id='seniorDifficulty']:hover + svg,
+input[id='seniorDifficulty']:focus + svg {
+  fill: rgb(220, 20, 60);
+}
+
+input[id='leadDifficulty']:checked + svg,
+input[id='leadDifficulty']:hover + svg,
+input[id='leadDifficulty']:focus + svg {
+  fill: rgb(255, 215, 0);
+}

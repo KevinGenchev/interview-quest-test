@@ -1,0 +1,218 @@
+<p-toast
+  [breakpoints]="{
+    '1800px': { right: '0', top: '86px' },
+    '992px': { width: '100%', right: '0', top: '0' }
+  }"
+></p-toast>
+<div class="flex justify-content-center container">
+  <div
+    class="align-items-center container-content lg:px-8 md:px-6 px-4 py-8 surface-ground ng-star-inserted"
+  >
+    <div class="text-center mb-5">
+      <img
+        src="assets/images/iq-logo-blue-white.png"
+        alt="Image"
+        height="50"
+        class="mb-3 cursor-pointer"
+        [routerLink]="['/']"
+      />
+      <div class="text-900 text-3xl font-medium mb-3">Register</div>
+      <span class="text-600 font-medium line-height-3">
+        Create an account quickly and easily to
+        <br />
+        experience the full capabilities of the website.
+      </span>
+    </div>
+
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="
+        authService.signUp(
+          username?.value,
+          email?.value,
+          password?.value,
+          passwordConfirm?.value
+        )
+      "
+      method="post"
+    >
+      <label
+        for="username"
+        class="block text-900 font-medium mb-2 mt-3"
+      >
+        Name
+      </label>
+      <input
+        pInputText
+        id="username"
+        type="text"
+        formControlName="username"
+        placeholder="Name"
+        [class]="
+          username?.valid
+            ? 'p-inputtext p-component p-element w-full p-2'
+            : 'input-fields-disabled-focus p-inputtext p-component p-element w-full p-2'
+        "
+        autocomplete="off"
+      />
+      <ng-container *ngIf="username?.touched">
+        <p
+          *ngIf="username?.errors?.['required']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Username is required!
+        </p>
+        <p
+          *ngIf="username?.errors?.['minlength']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Username must be at least 4 charachters!
+        </p>
+      </ng-container>
+
+      <label
+        for="email"
+        class="block text-900 font-medium mb-2 mt-3"
+      >
+        Email
+      </label>
+      <input
+        pInputText
+        formControlName="email"
+        type="email"
+        placeholder="Email"
+        [class]="
+          email?.valid
+            ? 'p-inputtext p-component p-element w-full p-2'
+            : 'input-fields-disabled-focus p-inputtext p-component p-element w-full p-2'
+        "
+        autocomplete="off"
+      />
+      <ng-container *ngIf="email?.touched">
+        <p
+          *ngIf="email?.errors?.['required']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Email is required!
+        </p>
+        <p
+          *ngIf="email?.errors?.['email']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Email is not valid!
+        </p>
+      </ng-container>
+
+      <label
+        for="password"
+        class="block text-900 font-medium mb-2 mt-3"
+      >
+        Password
+      </label>
+      <input
+        pInputText
+        formControlName="password"
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="Password"
+        [class]="
+          password?.valid
+            ? 'p-inputtext p-component p-element w-full p-2'
+            : 'input-fields-disabled-focus p-inputtext p-component p-element w-full p-2'
+        "
+        autocomplete="off"
+      />
+      <i
+        style="margin-left: -30px"
+        class="pi pi-eye px-1 bg-white cursor-pointer"
+        (click)="showPassword = !showPassword"
+      ></i>
+
+      <ng-container *ngIf="password?.touched">
+        <p
+          *ngIf="password?.errors?.['required']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Password is required!
+        </p>
+        <p
+          *ngIf="password?.errors?.['minlength']"
+          class="p-error my-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Password must be at least 8 charachters
+        </p>
+        <p
+          *ngIf="password?.errors?.['passwordStrength']"
+          class="p-error mt-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Password must have lower, upper case, symbol and number
+        </p>
+      </ng-container>
+
+      <label
+        for="passwordConfirm"
+        class="block text-900 font-medium mb-2 mt-3"
+      >
+        Confirm Password
+      </label>
+      <input
+        pInputText
+        formControlName="passwordConfirm"
+        [type]="showConfirmPassword ? 'text' : 'password'"
+        placeholder="Confirm password"
+        [class]="
+          passwordConfirm?.valid
+            ? 'p-inputtext p-component p-element w-full p-2'
+            : 'input-fields-disabled-focus p-inputtext p-component p-element w-full p-2'
+        "
+        autocomplete="off"
+      />
+      <i
+        style="margin-left: -30px"
+        class="pi pi-eye px-1 bg-white cursor-pointer"
+        (click)="showConfirmPassword = !showConfirmPassword"
+      ></i>
+
+      <ng-container *ngIf="passwordConfirm?.touched">
+        <p
+          *ngIf="passwordConfirm?.errors?.['required']"
+          class="p-error mt-1 mb-1 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Password is required!
+        </p>
+        <p
+          *ngIf="passwordConfirm?.errors?.['sameValue']"
+          class="p-error mt-1 mb-0 text-xs"
+        >
+          <i class="pi pi-exclamation-circle text-xs"></i>
+          Repeat password does not match password!
+        </p>
+      </ng-container>
+
+      <button
+        pButton
+        pRipple
+        label="Register"
+        icon="pi pi-user-plus mr-0"
+        class="p-button-raised w-full my-3"
+        type="submit"
+        [disabled]="registerForm.invalid || !passwordDoesMatch || loading"
+      ></button>
+    </form>
+    <button
+      pButton
+      pRipple
+      routerLink="/login"
+      label="Already a user?"
+      icon="pi pi-sign-in mr-0"
+      class="p-button-raised p-button-text w-full"
+    ></button>
+  </div>
+</div>

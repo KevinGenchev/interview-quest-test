@@ -1,0 +1,33 @@
+<div class="container md:p-0">
+  <div class="container-content surface-ground py-8 px-2 md:px-2">
+    <div class="text-900 font-bold text-2xl mb-7 text-center">
+      <h2 *ngIf="afAuth.authState | async as user">
+        Hi {{ user.displayName }}, what would you like to do?
+      </h2>
+      <h2 *ngIf="!(afAuth.authState | async)">
+        Hi Guest, what would you like to do?
+      </h2>
+    </div>
+
+    <div class="flex justify-content-evenly flex-column lg:flex-row">
+      <iq-card-component
+        *ngFor="let card of cards"
+        [icon]="card.icon"
+        [title]="card.title"
+        [description]="card.description"
+        [routerLink]="card.router"
+      ></iq-card-component>
+    </div>
+
+    <div class="m-auto w-max mt-8 cursor-pointer">
+      <div class="surface-card shadow-3 p-2 border-round-3xl">
+        <div class="flex">
+          <span class="p-2 surface-card">
+            <i class="pi pi-lock text-4xl text-blue-500"></i>
+          </span>
+          <h4>Browse "Admin Only"</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

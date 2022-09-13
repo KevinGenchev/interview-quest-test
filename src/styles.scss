@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px 0 16px;
+}
+
+.container-content {
+  border-radius: 1.5rem;
+  margin: auto;
+  box-shadow: 3px 3px 3px black, 0 0 25px black, 0 0 1rem black;
+  opacity: 70%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.input-fields-disabled-focus:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.12rem #e24c4c;
+  border-color: #e24c4c;
+}
+
+.exam-page-carousel .p-carousel-item {
+  align-self: center;
+}

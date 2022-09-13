@@ -1,0 +1,77 @@
+<nav class="sticky top-0 bg-primary header-naviagtion mb-3">
+  <div class="container md:p-0">
+    <div class="flex align-items-center">
+      <a
+        class="header-logo bg-primary no-underline pr-2"
+        [routerLink]="['/']"
+      >
+        <img
+          src="assets/images/iq-logo-blue-white.png"
+          alt="Image"
+          height="50"
+          class="my-2"
+        />
+      </a>
+      <ul class="flex-row mr-auto navigation-items pl-0">
+        <li>
+          <a
+            class="bg-primary no-underline"
+            [routerLink]="['/']"
+          >
+            Home
+          </a>
+        </li>
+      </ul>
+      <div
+        *ngIf="!(afAuth.authState | async)"
+        class="flex my-2"
+      >
+        <p-button
+          (click)="login.click()"
+          type="button"
+          label="Log in"
+          styleClass="p-button-sm mr-2 border-white"
+          icon="pi pi-fw pi-user"
+        >
+          <a
+            #login
+            [routerLink]="['/login']"
+          ></a>
+        </p-button>
+        <p-button
+          (click)="register.click()"
+          pRipple
+          type="button"
+          label="Register"
+          styleClass="p-button-sm border-white"
+          icon="pi pi-fw pi-user-plus"
+        >
+          <a
+            #register
+            [routerLink]="['/register']"
+          ></a>
+        </p-button>
+      </div>
+      <div *ngIf="afAuth.authState | async as user">
+        <p-button
+          pRipple
+          type="button"
+          label="Profile"
+          icon="pi pi-user"
+          styleClass="p-button-sm border-white mr-2"
+          [routerLink]="['/user-profile']"
+        ></p-button>
+
+        <p-button
+          pRipple
+          type="button"
+          label="Logout"
+          icon="pi pi-sign-out"
+          styleClass="p-button-sm border-white"
+          [routerLink]="['/']"
+          (click)="authService.signOut()"
+        ></p-button>
+      </div>
+    </div>
+  </div>
+</nav>
