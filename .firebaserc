@@ -1,14 +1,5 @@
 {
-  "targets": {
-    "interview-quest-bba41": {
-      "hosting": {
-        "interview-quest": [
-          "interview-quest-bba41"
-        ]
-      }
-    }
-  },
   "projects": {
-    "default": "interview-quest-bba41"
+    "default": "interview-quest-bba41-f6865"
   }
 }
